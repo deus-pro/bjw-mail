@@ -17,6 +17,6 @@ docker run --name='some_name' -it -p 8080:8080 -p 9990:9990 \
 -e SMTP_PORT='smtp server port' \
 -e IMAP_NAME='imap connection name' \
 -e IMAP_HOST='imap server host' \
--e IMAP_PORT='imap server port'
+-e IMAP_PORT='imap server port' \
 plussell/bw-mail
 ```
