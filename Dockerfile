@@ -11,8 +11,8 @@ COPY files /opt/liferay/files
 
 # configure mail server
 RUN cd $HOME && \
-    sed -i -e '/<socket-binding-group/ r $HOME/files/socket-binging-group.xml' $WILDFLY_STANDALONE_CFG && \
-    sed -i -e '/<profile>/ r $HOME/files/subsystem.xml' $WILDFLY_STANDALONE_CFG
+    sed -i -e '/<socket-binding-group/r $HOME/files/socket-binging-group.xml' $WILDFLY_STANDALONE_CFG && \
+    sed -i -e '/<profile>/r $HOME/files/subsystem.xml' $WILDFLY_STANDALONE_CFG
 
 # Cleanup
 USER root
