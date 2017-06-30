@@ -1,9 +1,9 @@
-<subsystem xmlns="urn:jboss:domain:mail:2.0">
-    <mail-session name=${env.MAIL_SESSION_NAME} jndi-name="java:/${env.MAIL_SESSION_NAME}">
-        <smtp-server outbound-socket-binding-ref=${env.SMTP_NAME} ssl="true" username=${env.MAIL_USERNAME} password=${env.MAIL_PASSWORD}/>
-	<custom-server name="imap" outbound-socket-binding-ref=${env.IMAP_NAME} ssl="true" username=${env.MAIL_USERNAME} password=${env.MAIL_PASSWORD}>
-            <property name="connectiontimeout" value="30000"/>
-            <property name="timeout" value="30000"/>
-        </custom-server>
-    </mail-session>
-</subsystem>
+        <subsystem xmlns="urn:jboss:domain:mail:2.0">
+            <mail-session name=${env.MAIL_SESSION_NAME} jndi-name="java:/${env.MAIL_SESSION_NAME}">
+                <smtp-server outbound-socket-binding-ref=${env.SMTP_NAME} ssl="true" username=${env.MAIL_USERNAME} password=${env.MAIL_PASSWORD}/>
+	        <custom-server name="imap" outbound-socket-binding-ref=${env.IMAP_NAME} ssl="true" username=${env.MAIL_USERNAME} password=${env.MAIL_PASSWORD}>
+                    <property name="connectiontimeout" value="30000"/>
+                    <property name="timeout" value="30000"/>
+                </custom-server>
+            </mail-session>
+        </subsystem>
