@@ -1,7 +1,7 @@
 # bw-mail
 base image with wildfly configured for mail server connection
 
-* to work with mysql do:
+* to configure connection with mail server:
 
 ```
 docker pull plussell/bw-mail
