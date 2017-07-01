@@ -1,6 +1,6 @@
-        <outbound-socket-binding name=${env.SMTP_NAME}>
-            <remote-destination host=${env.SMTP_HOST} port=${env.SMTP_PORT}/>
+        <outbound-socket-binding name="${env.SMTP_NAME}">
+            <remote-destination host="${env.SMTP_HOST}" port="${env.SMTP_PORT}"/>
         </outbound-socket-binding>
-        <outbound-socket-binding name=${env.IMAP_NAME}>
-	        <remote-destination host=${env.IMAP_HOST} port=${env.IMAP_PORT}/>
+        <outbound-socket-binding name="${env.IMAP_NAME}">
+	        <remote-destination host="${env.IMAP_HOST}" port="${env.IMAP_PORT}"/>
         </outbound-socket-binding>
